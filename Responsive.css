@@ -1,0 +1,57 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  .contact-form, .map {
+      width: 100%;
+  }
+
+  .image-slider .slide {
+      display: block;
+  }
+
+  .footer-icons a {
+      display: block;
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  .contact-form input, .contact-form select, .contact-form button {
+      width: 100%;
+  }
+}
+
+/* Gallery */
+@media (max-width: 768px) {
+  .gallery-item {
+      flex: 1 1 calc(50% - 10px); /* 2 items per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+      flex: 1 1 100%; /* 1 item per row on very small screens */
+  }
+}
+
+
+/* Meet-Kirho */
+@media (max-width: 768px) {
+  .image-text {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .image-text img {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+}

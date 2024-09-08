@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Website</title>
+    <link 
+        rel="stylesheet" href="KSstudios.css">
+    <link 
+        rel="website icon" href="img/IMG-20240318-WA0020.jpg">
+    <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" 
+        href="https://fontawesome.com/v4/icons/">
+    <script  
+        src="https://code.boxicons.com/2.0.7/boxicons.js"></script>
+    <script
+        src="https://kit.fontawesome.com/28069d2172.js"
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+        <nav>
+            <h1 class="logo">&nbsp;Kirho Studios</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="img/KIRHO STUDIOS PORTFOLIO.pdf.pdf">Portfolio</a></li>
+                <li>
+                    <a href="#info">Info</a>
+                    <ul>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Meet Kirho.html">Meet Kirho</a></li>
+                    </ul>
+                </li>
+                <li><a href="KirhoPackages.html">Packages</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+<!--Home design-->
+        <section id="home">
+            <img src="img/IMG-20240318-WA0020.jpg" alt="Home Image">
+            <br>
+        </section>
+
+        <section class="content-section">
+            <div class="meet-item">
+                <div class="image-text reversed">
+                    <img src="img/kirhostudios-20240317-0003.jpg" alt="Second Image">
+                    <div class="text">
+                    <h2>Our Story</h2>
+                    <p>Welcome to Kirho Studios, a photography studio rooted in the bonds of family. Founded by a dynamic team of siblings, our studio is more than just a business; 
+                        it's a passion project fueled by a shared love for capturing life's most precious moments. 
+                        <br><br>As a family, 
+                        we understand the importance of preserving memories, and we are dedicated to creating timeless photographs that tell your unique story.
+                        With a blend of creativity, skill, and a personal touch, we specialize in a wide range of photography services, including family portraits, milestone celebrations, and professional headshots. 
+                        <br>Every click of the shutter is an opportunity to freeze a moment in time, and we take great pride in ensuring that each photograph we create is a masterpiece that you'll cherish forever. 
+                        </p>
+                </div>
+            </div>
+        </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="img/kirhostudios-20240907-0011.heic" alt="Image 3 Description">
+                    <br>
+                    <br>
+                    <a href="Gallery.html">Individual
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/kirhostudios-20240907-0005.heic" alt="Image 3 Description">
+                    <br>
+                    <br>
+                    <a href="Gallery.html">Brands
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/kirhostudios-20240907-0007.heic" alt="Image 3 Description">
+                    <br>
+                    <br>
+                    <a href="Gallery.html">Weddings
+                    </a>
+                </div>
+            </div>
+            <h3>Kind Words</h3>
+            <p class="message">Book Kirho Studios now for your wedding!! Kirho was amazing to work with- not only is their work absolutely stunning, 
+                the're chill, professional, and were SO helpful on my wedding day helping with random things outside there responsibilities, like putting my veil on and helping me with my bustle. 
+                They know exactly what’s going to photograph well but also works with you to make sure you’re comfortable and having fun. 
+                They also turned around our wedding photo preview in literally 24 hours after our wedding! I can’t rave aboutKirho studios more!!</p>
+        </section>
+<!-- End Home-->
+
+<!--Portfolio design-->
+<!-- End Portifolio-->
+
+
+
+<!--Contact design-->
+<h2>Contact</h2>
+<br>
+        <section id="contacts">
+            <div class="contact-form">
+                
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"  required>
+                    <label for="location">Location:</label>
+                    <select id="location" name="location">
+                        <option value="studio">Nairobi</option>
+                        <option value="studio">Meru</option>
+                        <option value="studio">Nakuru</option>
+                        <option value="studio">Nyeri</option>
+                        <option value="studio">Kisumu</option>
+                        <option value="studio">Kitui</option>
+                        <option value="studio">Naivasha</option>
+                        <option value="studio"></option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.162332690039!2d36.7827601!3d-1.3005032!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1143c394e7af%3A0xbe8211d2f1623801!2sKirho%20Studios!5e0!3m2!1sen!2ske!4v1725650872261!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+        </section>
+<!--Contact end-->
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="img/KIRHO STUDIOS PORTFOLIO.pdf.pdf">Portfolio</a></li>
+                <li><a href="Meet Kirho.html">Info</a></li>
+                <li><a href="KirhoPackages.html">Packages</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/kirhostudios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class='bx bxl-instagram' style="color:#f5c409"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook' style="color:#f5c409"></i></a>
+            <a href="wa.me/c/254759615425" target="_blank"><i class='bx bxl-whatsapp' style="color:#f5c409"></i></a>
+        </div>
+        <p>&copy; Kirho Studios 2024 </p>
+        <div class="top">
+            <a href="#Home"><i class='bx bxs-home'style="color:#f5c409"></i></a>
+        </div>
+    </footer>
+
+    <script src="KSstudio.js"></script>
+</body>
+</html>

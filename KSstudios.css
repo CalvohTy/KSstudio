@@ -1,0 +1,446 @@
+/* General Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    justify-content: space-between;
+    padding: 10px 40px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f8be1f;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    font-weight: bold;
+    color: black;
+}
+nav ul li a::after{
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  width: 0;
+  height: 0.15rem;
+  transform: translateX(-50%);
+  background-color: #ffa500;
+  transition: all 0.5s ease;
+}
+.nav ul li a:hover::after {
+    width: 75%;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    padding: 0;
+    top: 100%;
+    left: 0;
+    width: 200px;
+}
+
+nav ul li:hover ul {
+    display: block;
+    color: #f8be1f;
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    display: block;
+}
+
+.logo{
+    margin: 10px 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    padding: 0 1.2rem;
+    font-weight: 700; 
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(224, 185, 10, 0.7);
+    background: linear-gradient(45deg, #0f0e06fa, #0f0e0d);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px; 
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+/*home design */
+section {
+    margin-bottom: 40px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+section a{
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    background-color: #f8f9fa; /* Optional: background color */
+    padding: 10px;
+    text-decoration: none;
+    color: black; /* Link color */
+    font-size: 1rem;
+    padding: 10px 20px; /* Space around the text */
+    margin: 0 10px; /* Space between the links */
+    flex: 1; /* Allow the links to grow and fill the space */
+    text-align: center;
+    border-radius: 3px;
+    
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: wheat;
+    color: black;
+    text-decoration: none;
+    border-radius: 11px 15px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: wheat;
+}
+/*Home 2 Design*/
+.content-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.content-section img{
+    border-radius: 5px;
+}
+
+/* Container for button and image */
+.cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Style for the button */
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color:wheat;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the image */
+.cta-image {
+    max-width: 50%;
+    height: auto;
+}
+/*End here*/
+
+/* Gallery container and items */
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.gallery-container a{
+    border-radius: 5px;
+    background-color: wheat;
+}
+.gallery-container a:hover{
+    color: whitesmoke;
+    background-color: black;
+}
+h3{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 100;
+}
+.message {
+    font-size:smaller;
+    color: #333;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*End*/ 
+.image-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.image-slider .slide {
+    display: none;
+    text-align: center;
+}
+
+.image-slider .slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-controls button {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slider-controls button:hover {
+    background-color: #ffa500;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/*Meet-Studio Design */
+#meet-Kirho-Studios {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.meet-item {
+    margin-bottom: 40px;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-text img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-text .text {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-text .text h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.image-text .text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.image-text.reversed {
+    flex-direction: row-reverse;
+}
+
+.button-container {
+    text-align: center;
+}
+
+
+
+/* Contact Design*/
+.contact-form, .map {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+    color: #f8be1f;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+.contact-form input, .contact-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #0a0a0a;
+    border-radius: 3px;
+}
+
+.contact-form button {
+    background-color: #ffa500;
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: wheat;
+}
+
+.map {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+
+/* Footer design */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+footer nav {
+    margin-bottom: 20px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+nav ul li a {
+    color: #f8be1f;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    font-weight: bold;
+    color: black;
+}
+nav ul li a::after{
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  width: 0;
+  height: 0.15rem;
+  transform: translateX(-50%);
+  background-color: #ffa500;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover::after {
+    width: 75%;
+}
+
+
+footer .footer-icons {
+    margin-bottom: 10px;
+}
+
+footer .footer-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+footer p {
+    margin: 10px 0;
+}
+
+footer i{
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 25px;
+    color: black;
+    background: p;
+    align-items: end;
+}
+

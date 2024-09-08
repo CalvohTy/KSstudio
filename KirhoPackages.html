@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Website</title>
+    <link 
+        rel="stylesheet" href="KirhoPackages.css">
+    <link 
+        rel="website icon" href="img/IMG-20240318-WA0020.jpg">
+    <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" 
+        href="https://fontawesome.com/v4/icons/">
+    <script  
+        src="https://code.boxicons.com/2.0.7/boxicons.js"></script>
+    <script
+        src="https://kit.fontawesome.com/28069d2172.js"
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+        <nav>
+            <h1 class="logo">&nbsp;Kirho Studios</h1>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="img/KIRHO STUDIOS PORTFOLIO.pdf.pdf">Portfolio</a></li>
+                <li>
+                    <a href="#info">Info</a>
+                    <ul>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Meet Kirho.html">Meet Kirho</a></li>
+                    </ul>
+                </li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+        <!-- Gallery Sections -->
+        <section id="individual" class="gallery-section">
+            <h2>Packages</h2>
+            <div class="gallery-grid">
+                <!-- Images for Individual -->
+                <div class="gallery-item"><img src="Packages/1.jpg" alt="Image 5-1"></div>
+                <div class="gallery-item"><img src="Packages/2.jpg" alt="Image 5-2"></div>
+                <div class="gallery-item"><img src="Packages/3.jpg"Image 5-3"></div>
+            </div>
+        </section>
+
+        <section id="individual" class="gallery-section"></section>
+            <div class="gallery-grid">
+                <!-- Images for Individual -->
+                <div class="gallery-item"><img src="Packages/4.jpg" alt="Image 5-1"></div>
+                <div class="gallery-item"><img src="Packages/5.jpg" alt="Image 5-2"></div>
+                <div class="gallery-item"><img src="Packages/6.jpg" alt="image 5-3"></div>
+            </div>
+        </section>
+
+        <section id="individual" class="gallery-section"></section>
+            <div class="gallery-grid">
+                <!-- Images for Individual -->
+                <div class="gallery-item"><img src="Packages/7.jpg" alt="Image 5-1"></div>
+                <div class="gallery-item"><img src="Packages/8.jpg" alt="Image 5-2"></div>
+                <div class="gallery-item"><img src="Packages/9.jpg" alt="image 5-3"></div>
+            </div>
+        </section>
+
+        <!-- Modal for Viewing Images -->
+            <div class="modal" id="modal">
+                <span class="modal-close" id="modal-close">&times;</span>
+                <div class="modal-content">
+                    <img id="modal-img" src="" alt="Full Image">
+                    <div class="modal-nav">
+                        <button id="modal-prev" class="modal-nav-btn">&#9664;</button>
+                        <button id="modal-next" class="modal-nav-btn">&#9654;</button>
+                    </div>
+                </div>
+            </div>
+
+<!--Contact design-->
+<h2>Contact</h2>
+<h4>
+    For bookings you can call us through +254 797684993
+</h4>
+<br>
+        <section id="contacts">
+            <div class="contact-form">
+                
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"  required>
+                    <label for="location">Location:</label>
+                    <select id="location" name="location">
+                        <option value="studio">Nairobi</option>
+                        <option value="studio">Meru</option>
+                        <option value="studio">Nakuru</option>
+                        <option value="studio">Nyeri</option>
+                        <option value="studio">Kisumu</option>
+                        <option value="studio">Kitui</option>
+                        <option value="studio">Naivasha</option>
+                        <option value="studio"></option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.162332690039!2d36.7827601!3d-1.3005032!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1143c394e7af%3A0xbe8211d2f1623801!2sKirho%20Studios!5e0!3m2!1sen!2ske!4v1725650872261!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+        </section>
+<!--Contact end-->
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="img/KIRHO STUDIOS PORTFOLIO.pdf.pdf">Portfolio</a></li>
+                <li><a href="Meet Kirho.html">Info</a></li>
+                <li><a href="KirhoPackages.html">Packages</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/kirhostudios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class='bx bxl-instagram' style="color:#f5c409"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook' style="color:#f5c409"></i></a>
+            <a href="wa.me/c/254759615425" target="_blank"><i class='bx bxl-whatsapp' style="color:#f5c409"></i></a>
+        </div>
+        <p>&copy; Kirho Studios 2024 </p>
+        <div class="top">
+            <a href="Home.html"><i class='bx bxs-home'style="color:#f5c409"></i></a>
+        </div>
+    </footer>
+
+    <script src="Gallery.js"></script>
+</body>
+</html>
